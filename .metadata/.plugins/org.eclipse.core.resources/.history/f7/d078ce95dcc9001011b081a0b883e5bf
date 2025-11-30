@@ -1,0 +1,8 @@
+package com.phone;
+
+public class Phone {
+
+	private int phoneId;
+	private String phoneName;
+	private int phoneStorage;
+}

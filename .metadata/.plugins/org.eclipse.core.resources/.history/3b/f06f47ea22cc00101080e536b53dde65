@@ -1,0 +1,29 @@
+package com.example.SpringBootDev;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BankService {
+	@Autowired
+	private BankRepository bankrepository;
+	
+	public Bank savebank(Bank bank) {
+		return bankrepository.saveAndFlush(bank);
+	}
+	
+	//get all data method
+	public List<Bank> getAllBankData(){
+		return bankrepository.findAll();
+	}
+	
+	public Bank getBankById(int id) {
+		return bankrepository.findById(id).orElse(null);
+	}
+	
+	public Bank updateBank(int id , Bank bank) {
+		retrun;
+	}
+
+}

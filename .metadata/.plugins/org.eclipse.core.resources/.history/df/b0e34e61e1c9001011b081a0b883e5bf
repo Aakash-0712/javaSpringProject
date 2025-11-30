@@ -1,0 +1,21 @@
+package com.run;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.employee.Employee;
+import com.phone.Phone;
+
+public class run {
+public static void main(String[] args) {
+	 ApplicationContext contex = new ClassPathXmlApplicationContext("beans.xml");
+	 Phone p =(Phone)contex.getBean("phone");
+	 System.out.println("Phone ModelNo :"+p.getPhoneId()+" Phone Name :"+p.getPhoneName()+" Phone Storage "+ p.getPhoneStorage());
+	 p.personDetails();
+	 
+	 Employee e = (Employee) contex.getBean("employee");
+	 System.out.println("Employee No :" +e.getEmployeeID()+" Employee Name :"+e.getEmployeeName()+" ");
+	 e.departmentDetails();
+	 
+	}
+}

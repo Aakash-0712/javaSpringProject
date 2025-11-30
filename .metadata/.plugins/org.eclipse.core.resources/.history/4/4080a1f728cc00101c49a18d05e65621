@@ -1,0 +1,47 @@
+
+package com.example.SpringBootDev;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BankService {
+	@Autowired
+	private BankRepository bankrepository;
+	
+	public Bank savebank(Bank bank) {
+		return bankrepository.saveAndFlush(bank);
+	}
+	
+	//get all data method
+	public List<Bank> getAllBankData(){
+		return bankrepository.findAll();
+	}
+	
+	public Bank getBankById(int id) {
+		return bankrepository.findById(id).orElse(null);
+	}
+	
+	public Bank updateBank(int id , Bank bank) {
+		Bank existingBank = bankrepository.findById(id).orElse(null);
+		if(existingBank!=null) {
+			existingBank.setAccountHolderName(bank.getAccountHolderName());
+			existingBank.setAccountNumber(bank.getAccountNumber());
+			existingBank.setAccountID(bank.getAccountID());
+			existingBank.setBalance(bank.getBalance());
+			return bankrepository.saveAndFlush(existingBank);
+		}else {
+				return null;
+		}
+	}
+
+	public Bank deleteBank(int id,Bank bank) {
+		Bank existingBank = bankrepository.findById(id).orElse(null);
+		if(existingBank!=null) {
+			return bankrepository.deleteById(id);
+		}
+		return null;
+		
+	}
+}

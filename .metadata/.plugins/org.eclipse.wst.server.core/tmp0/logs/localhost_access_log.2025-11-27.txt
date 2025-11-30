@@ -1,0 +1,15 @@
+127.0.0.1 - - [27/Nov/2025:12:02:56 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [27/Nov/2025:17:41:36 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [27/Nov/2025:17:41:41 +0530] "GET /SpringMvcApplication/ HTTP/1.1" 200 57
+127.0.0.1 - - [27/Nov/2025:17:41:42 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [27/Nov/2025:17:48:35 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [27/Nov/2025:17:48:36 +0530] "GET /SpringMvcApplication/ HTTP/1.1" 200 57
+127.0.0.1 - - [27/Nov/2025:17:48:40 +0530] "GET /SpringMvcApplication/ HTTP/1.1" 200 57
+127.0.0.1 - - [27/Nov/2025:18:00:26 +0530] "GET /SpringMvcApplication/ HTTP/1.1" 200 57
+127.0.0.1 - - [27/Nov/2025:18:00:29 +0530] "GET /SpringMvcApplication/ HTTP/1.1" 200 57
+127.0.0.1 - - [27/Nov/2025:18:01:24 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [27/Nov/2025:18:01:24 +0530] "GET /SpringMvcApplication/ HTTP/1.1" 404 777
+127.0.0.1 - - [27/Nov/2025:18:01:35 +0530] "GET /SpringMvcApplication/ HTTP/1.1" 404 777
+127.0.0.1 - - [27/Nov/2025:18:01:37 +0530] "GET /SpringMvcApplication/ HTTP/1.1" 404 777
+127.0.0.1 - - [27/Nov/2025:18:06:03 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [27/Nov/2025:18:06:04 +0530] "GET /SpringMvcApplication/ HTTP/1.1" 404 777

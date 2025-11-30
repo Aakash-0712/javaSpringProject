@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+                           
+                <bean id="person" class="com.person.Person">
+                	<property name="personId" value="1"></property>
+                	<property name="personName" value="Aakash"></property>
+                	<property name="personMobile" value="1"></property>
+                	
+                
+     
+                </bean>
+                
+                <bean id="phone" class="com.phone.Phone">
+                
+                
+                </bean>
+
+</beans>
+				

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+                           
+                <bean id="person" class="com.person.Person">
+                	<property name="personId" value="1"></property>
+                	<property name="personName" value="Aakash"></property>
+                	<property name="personMobile" value="1"></property>
+                </bean>
+                
+                <bean id="phone" class="com.phone.Phone">
+                	<property name="phoneId" value="11"></property>
+                	<property name="phoneName" value="IPhone"></property>
+                	<property name="phoneStorage" value="256"></property>
+                	<property name="person" ref="person"></property>
+                </bean>
+                
+                <bean id="department" class="com.department.Department">
+                	<property name="departmentId" value="11"></property>
+                	<property name="departmentName" value="Computer"></property>
+                </bean>
+                
+                 <bean id="employee" class="com.employee.Employee">
+                	<property name="employeeID" value="12"></property>
+                	<property name="employeeName" value="employee"></property>
+                	<property name="department" ref="department"></property>
+                </bean>
+                
+                
+<!-- Engine bean with constructor argument -->
+    <bean id="engine" class="com.engine.Engine">
+        <constructor-arg value="Diesel" />
+    </bean>
+
+    <!-- Car bean with engine constructor injection -->
+    <bean id="car" class="com.car.Car">
+        <constructor-arg ref="engine" />
+    </bean>
+    
+    
+</beans>
+				

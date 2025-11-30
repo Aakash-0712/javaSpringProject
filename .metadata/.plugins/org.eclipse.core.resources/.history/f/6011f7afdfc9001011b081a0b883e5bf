@@ -1,0 +1,6 @@
+package com.department;
+
+public class Department {
+	private int departmentId;
+	private int departmentName;
+}

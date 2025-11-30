@@ -1,0 +1,5 @@
+127.0.0.1 - - [28/Nov/2025:22:40:44 +0530] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [28/Nov/2025:22:40:44 +0530] "GET /SpringMvcApplication/ HTTP/1.1" 404 683
+127.0.0.1 - - [28/Nov/2025:22:40:44 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [28/Nov/2025:22:40:52 +0530] "GET /SpringMvcApplication/home HTTP/1.1" 404 683
+127.0.0.1 - - [28/Nov/2025:22:40:57 +0530] "GET /SpringMvcApplication/about HTTP/1.1" 404 683
