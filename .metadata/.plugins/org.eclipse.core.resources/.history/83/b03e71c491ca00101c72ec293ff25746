@@ -1,8 +1,0 @@
-package com.example.SpringBootDev;
-
-public class Bank {
-	private int AccountID;
-	private int balance;
-	private int accountNumber;
-	private String accountHolderName;
-}

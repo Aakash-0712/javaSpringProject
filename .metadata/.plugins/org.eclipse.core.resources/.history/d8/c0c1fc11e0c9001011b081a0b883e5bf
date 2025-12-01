@@ -1,9 +1,0 @@
-package com.employee;
-
-import com.department.Department;
-
-public class Employee {
-	private int employeeID;
-	private String employeeName;
-	private Department department;
-}

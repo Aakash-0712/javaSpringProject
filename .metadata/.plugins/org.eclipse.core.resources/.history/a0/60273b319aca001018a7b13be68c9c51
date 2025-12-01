@@ -1,7 +1,0 @@
-server.port=9495
-spring.application.name=SpringBootDev
-spring.datasource.driver-class-name=com.mysql.cj.jdbc
-spring.datasource.url=jdbc:mysql://localhost:3309/test
-spring.datasource.username=root
-spring.datasource.password=
-hibernate.ddl-auto=updateg.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
